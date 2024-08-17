@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Module</title>
+  <link rel="stylesheet" href="AvailDate.css">
+  <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="C:\Users\cielo\Desktop\Jacky's Pic\logo.jpg" alt="" style="height: 50px; width: 60px;">
+      </div>
+      <div class="navlinks">
+        <ul id="menulinks">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="AvailDate.html">Available Date</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><button class="primary-btn">BOOK NOW</button></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="heading1">
+    <h1>Available Date</h1></div>
+  
+    <div class="appointment">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+    
+      <label for="date">Select Date:</label>
+      <div class="datepicker">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="4">
+                <select id="yearSelect">
+                  <!-- Populate year options dynamically -->
+                </select>
+              </th>
+              <th colspan="3">
+                <select id="monthSelect">
+                  <!-- Populate month options dynamically -->
+                </select>
+              </th>
+            </tr>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody id="daysContainer">
+            <!-- Days will be populated dynamically -->
+          </tbody>
+        </table>
+      </div>
+    
+      <label for="time">Appointment Time:</label>
+      <div id="timePicker">
+        <label for="fromHour">From:</label>
+        <select id="fromHour"></select>
+        <label for="toHour">To:</label>
+        <select id="toHour"></select>
+      </div>
+    
+      <label for="guests">Guests:</label>
+      <div class="guests">
+        <label for="adults">Adults:</label>
+        <input type="number" id="adults" name="adults" min="1" required>
+        <label for="children">Children:</label>
+        <input type="number" id="children" name="children" min="0">
+      </div>
+    
+      <label for="menu">Menu:</label>
+      <select id="menu" name="menu" required>
+        <option value="">Select Menu</option>
+        <option value="standard">Standard</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+        <option value="gluten-free">Gluten-Free</option>
+      </select>
+    
+      <label for="eventType">Type of Event:</label>
+      <select id="eventType" name="eventType" required>
+        <option value="">Select Event Type</option>
+        <option value="birthday">Birthday</option>
+        <option value="wedding">Wedding</option>
+        <option value="debut">Debut</option>
+        <option value="corporate">Corporate Event</option>
+        <option value="anniversary">Anniversary</option>
+        <option value="other">Other</option>
+      </select>
+    
+      <label for="venue">Venue Location:</label>
+      <input type="text" id="venue" name="venue" placeholder="Venue Location" required>
+    
+      <button id="submitAppointment" class="green-btn">Reserve Now</button>
+    </div>
+
+    <div class="calendar-container">
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FManila&bgcolor=%23ffffff&src=amFubmFnaWxsYTEzQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZmFtaWx5MTU5ODgxMTkzNDQ0NjQ1MTg0NTJAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4tZ2IucGhpbGlwcGluZXMjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%23E67C73&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+  <footer>
+    <div class="container grid">
+      <div class="box">
+        <img src="C:\Users\cielo\Downloads\logo-removebg-preview.png" alt="" style="height: 60px; height: 60px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+        <div class="icon-footer">
+          <a href="https://www.facebook.com/JackysCateringServices" target="_blank">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/jackyscatering/" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+  
+      <div class="box">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="Events.html">Services</a></li>
+        </ul>
+      </div>
+  
+      <div class="box">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+        </p>
+        <i class="fa fa-location-dot"></i>
+        <label>Jacky's food hall, Cainta, Philippines </label> <br>
+        <i class="fa fa-phone"></i>
+        <label>[88] 657 524 332</label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>jackyscateringservices@gmail.com</label> <br>
+      </div>
+    </div>
+  </footer>
+
+  <script src="AvailDate.js"></script>
+</body>
+</html>

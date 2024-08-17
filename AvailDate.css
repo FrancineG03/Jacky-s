@@ -1,0 +1,257 @@
+.heading1{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .heading1 h1{
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .heading1 h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+  }
+/* Style your calendar here */
+.calendar {
+    font-family: Arial, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  /* Customize as needed */
+  .appointment {
+    border: 1px solid #ccc;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px;
+  }
+  
+  .appointment label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .appointment input[type="text"],
+  .appointment input[type="number"],
+  .appointment select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .guests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .guests label {
+    width: 40%;
+    margin-right: 10px;
+  }
+  
+  .guests input[type="number"] {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+
+  #submitAppointment.green-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #submitAppointment.green-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .datepicker {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .datepicker table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .datepicker th,
+  .datepicker td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .datepicker .selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .datepicker .disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .timePicker label {
+    width: 40%;
+    margin-right: 10px;
+  }
+  
+  .timePicker select {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+
+  /* Popup form styling */
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .popup-content .close:hover,
+  .popup-content .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #continueButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #continueButton:hover {
+    background-color: #45a049;
+  }
+  
+  #appointmentDetails {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background: #282834;
+    color: #b6b7b9;
+    padding: 4% 2% 0;
+  }
+  
+  footer .grid {
+    display: grid;
+    grid-template-columns: 6fr 3fr 4fr;
+    gap: 20px;
+  }
+  
+  footer p {
+    color: #b6b7b9;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  footer .icon i {
+    margin: 20px 20px 20px 0;
+    color: #b6b7b9;
+  }
+  
+  footer h2 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  footer li {
+    margin-bottom: 10px;
+  }
+  
+  footer i {
+    color: #7fc142;
+    margin: 5px 0;
+  }
+  
+  footer label {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  
+  footer .legal {
+    background: #252530;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  footer .legal p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Jacky's Catering</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Menu.css">
+</head>
+
+<body>
+  <header>
+    <div class="content flex_space">
+    <div class="logo">
+      <img src="C:\Users\cielo\Desktop\Jacky's Pic\logo.jpg" alt="" style="height: 50px; height: 50px;">
+    </div>
+    <div class="navlinks">
+      <ul id="menulinks">
+        <li><a href="Home.html">home</a> </li>
+          <li><a href="About.html">about</a> </li>
+          <li><a href="Menu.html">menu</a> </li>
+          <li><a href="Events.html">events</a> </li>
+          <li><a href="AvailDate.html">Available Date</a> </li>
+          <li><a href="Contact.html">contact</a> </li>
+          <li> <i class="fa fa-search"></i> </li>
+          <li> <button class="primary-btn">BOOK NOW</button> </li>
+      </ul>
+      <span class="fa fa-bars" onclick="menutoggle()"></span>
+    </div>
+  </div>
+  </header>
+
+  <div class="heading1">
+    <h1>Menu</h1></div>
+  
+  <div class="main-scroll-div">
+    <div>
+        <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-left"></i></button>
+    </div>
+    <div class="cover">
+        <div class="scroll-images">
+            <div class="child"><img class="child-img" src="C:\Users\cielo\Desktop\Jacky's Pic\meal2.jpg" alt="image"></div>
+            <div class="child"><img class="child-img" src="C:\Users\cielo\Desktop\Jacky's Pic\meal2.jpg" alt="image"></div>
+            <div class="child"><img class="child-img" src="C:\Users\cielo\Desktop\Jacky's Pic\meal2.jpg" alt="image"></div>
+            <div class="child"><img class="child-img" src="C:\Users\cielo\Desktop\Jacky's Pic\meal2.jpg" alt="image"></div>
+            <div class="child"><img class="child-img" src="C:\Users\cielo\Desktop\Jacky's Pic\meal2.jpg" alt="image"></div>
+            <div class="child"><img class="child-img" src="C:\Users\cielo\Desktop\Jacky's Pic\meal2.jpg" alt="image"></div>
+        </div>
+    </div>
+    <div>
+        <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-right"></i></button>
+    </div>
+</div>
+
+<footer>
+  <div class="container grid">
+    <div class="box">
+      <img src="C:\Users\cielo\Downloads\logo-removebg-preview.png" alt="" style="height: 60px; height: 60px;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="icon-footer">
+        <a href="https://www.facebook.com/JackysCateringServices" target="_blank">
+          <i class="fa fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/jackyscatering/" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="Events.html">Services</a></li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Contact Us</h2>
+      <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+      </p>
+      <i class="fa fa-location-dot"></i>
+      <label>Jacky's food hall, Cainta, Philippines </label> <br>
+      <i class="fa fa-phone"></i>
+      <label>[88] 657 524 332</label> <br>
+      <i class="fa fa-envelope"></i>
+      <label>jackyscateringservices@gmail.com</label> <br>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+
+  <script>
+    function scrolll() {
+        var left = document.querySelector(".scroll-images");
+        left.scrollBy(350, 0)
+    }
+
+    function scrollr() {
+        var right = document.querySelector(".scroll-images");
+        right.scrollBy(-350, 0)
+    }
+</script>
+</body>
+</html>
