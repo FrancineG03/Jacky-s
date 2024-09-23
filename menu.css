@@ -1,0 +1,61 @@
+.main-scroll-div {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .cover {
+    position: relative;
+    width: 90%;
+    height: 50%;
+  }
+  
+  .scroll-images {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+  
+  .child {
+    min-width: 600px;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.child-img {
+  width: 60%;
+  height: 100%;
+  border-radius: 20px 20px 0 0; /* Adds curve only to the top edges */
+  transform: translateY(-20px); /* Moves the image slightly upward */
+  transition: transform 0.3s ease-in-out; /* Smooth transition effect when image moves */
+}
+
+.child-img:hover {
+  transform: translateY(-30px); /* Moves the image more upward when hovered */
+}
+
+
+  
+.icon {
+  color: #fffdfd;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  padding: 30px;
+  cursor: pointer;
+  background-color: transparent; /* Makes the background transparent */
+}
+
+.icon:hover {
+  color: #ea8b8b;
+}
